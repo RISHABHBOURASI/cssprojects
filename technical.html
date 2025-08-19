@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Navigation */
+    nav {
+      width: 250px;
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    nav h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: block;
+      color: #ddd;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background: #444;
+      color: #fff;
+    }
+
+    /* Main Documentation */
+    main {
+      margin-left: 270px;
+      padding: 20px;
+      flex: 1;
+      background: #f9f9f9;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    pre {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: monospace;
+      color: #ffb347;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav>
+    <h2>Docs Menu</h2>
+    <a href="#intro">Introduction</a>
+    <a href="#setup">Setup</a>
+    <a href="#syntax">Syntax</a>
+    <a href="#examples">Examples</a>
+    <a href="#summary">Summary</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>
+        Welcome to the technical documentation page. This guide will help you understand the basics of HTML, CSS, and JavaScript with simple examples.
+      </p>
+    </section>
+
+    <section id="setup">
+      <h2>Setup</h2>
+      <p>
+        To get started, all you need is a text editor (VS Code recommended) and a browser (Chrome, Firefox, or Edge).
+      </p>
+    </section>
+
+    <section id="syntax">
+      <h2>Syntax</h2>
+      <p>Here’s an example of basic HTML structure:</p>
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    </section>
+
+    <section id="examples">
+      <h2>Examples</h2>
+      <p>Let’s see a CSS example:</p>
+      <pre><code>
+body {
+  background: lightblue;
+  font-family: Arial, sans-serif;
+}
+      </code></pre>
+    </section>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>
+        You learned how to structure a documentation page with HTML and style it using CSS. Navigation links help users jump between topics easily.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
