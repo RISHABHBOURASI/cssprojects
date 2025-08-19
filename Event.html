@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Conference 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #00c2ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c2ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: #00c2ff;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #008bb5;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #222;
+    }
+
+    /* Speakers */
+    .speakers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .speaker-card {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .speaker-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .speaker-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .speaker-card h3 {
+      margin-top: 1rem;
+      color: #00c2ff;
+    }
+
+    /* Schedule */
+    .schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .schedule-item {
+      background: white;
+      padding: 1rem;
+      border-left: 5px solid #00c2ff;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .schedule-item h4 {
+      margin-bottom: 0.3rem;
+      color: #333;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TechConf 2025</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Tech Conference 2025</h2>
+    <p>Join us on March 15, 2025 – New Delhi, India</p>
+    <a href="#register" class="btn">Register Now</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About the Event</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      TechConf 2025 brings together developers, designers, entrepreneurs, and tech enthusiasts from across the globe. 
+      Learn from industry leaders, network with peers, and explore the latest innovations in technology.
+    </p>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers">
+    <h2 class="section-title">Our Speakers</h2>
+    <div class="speakers">
+      <div class="speaker-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Speaker">
+        <h3>John Doe</h3>
+        <p>AI Specialist</p>
+      </div>
+      <div class="speaker-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Speaker">
+        <h3>Jane Smith</h3>
+        <p>Blockchain Expert</p>
+      </div>
+      <div class="speaker-card">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Speaker">
+        <h3>Michael Lee</h3>
+        <p>Cloud Architect</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule">
+    <h2 class="section-title">Event Schedule</h2>
+    <div class="schedule">
+      <div class="schedule-item">
+        <h4>10:00 AM - Opening Keynote</h4>
+        <p>Welcome speech and conference introduction.</p>
+      </div>
+      <div class="schedule-item">
+        <h4>11:30 AM - AI in 2025</h4>
+        <p>Exploring the future of Artificial Intelligence.</p>
+      </div>
+      <div class="schedule-item">
+        <h4>02:00 PM - Blockchain for Business</h4>
+        <p>How blockchain is reshaping industries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register -->
+  <section id="register" style="text-align:center;">
+    <h2 class="section-title">Register Now</h2>
+    <p>Don’t miss out on the biggest tech event of the year!</p>
+    <a href="#" class="btn">Sign Up</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TechConf | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
