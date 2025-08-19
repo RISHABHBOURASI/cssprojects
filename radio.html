@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Button Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #0072ff;
+    }
+
+    .question {
+      margin-bottom: 1.5rem;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* Hide default radio */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Custom radio button style */
+    .option {
+      position: relative;
+      padding: 12px 15px 12px 45px;
+      background: #f4f7fb;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .option::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid #0072ff;
+      background: #fff;
+      transition: 0.3s;
+    }
+
+    input[type="radio"]:checked + .option {
+      border-color: #0072ff;
+      background: #e6f0ff;
+      color: #0072ff;
+      font-weight: 600;
+    }
+
+    input[type="radio"]:checked + .option::before {
+      background: #0072ff;
+      box-shadow: 0 0 0 4px rgba(0,114,255,0.2);
+    }
+
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      background: #0072ff;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #005ac2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Radio Button Project</h2>
+
+    <div class="question">
+      <p>1. What is your favorite programming language?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="q1" value="html">
+          <span class="option">HTML</span>
+        </label>
+        <label>
+          <input type="radio" name="q1" value="css">
+          <span class="option">CSS</span>
+        </label>
+        <label>
+          <input type="radio" name="q1" value="javascript">
+          <span class="option">JavaScript</span>
+        </label>
+        <label>
+          <input type="radio" name="q1" value="python">
+          <span class="option">Python</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. How do you rate your coding skills?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="q2" value="beginner">
+          <span class="option">Beginner</span>
+        </label>
+        <label>
+          <input type="radio" name="q2" value="intermediate">
+          <span class="option">Intermediate</span>
+        </label>
+        <label>
+          <input type="radio" name="q2" value="advanced">
+          <span class="option">Advanced</span>
+        </label>
+      </div>
+    </div>
+
+    <button>Submit</button>
+  </div>
+</body>
+</html>
