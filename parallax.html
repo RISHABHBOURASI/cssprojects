@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Website</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Parallax sections */
+    .parallax {
+      background-image: url("https://picsum.photos/id/1015/1920/1080");
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .parallax2 {
+      background-image: url("https://picsum.photos/id/1016/1920/1080");
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #f4f4f4;
+      color: #333;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff6600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First Parallax Section -->
+  <div class="parallax">
+    <div class="section" style="background: rgba(0,0,0,0.5); color: white;">
+      <h1>Welcome to My Parallax Website</h1>
+      <p>Scroll down to see the effect</p>
+      <a href="#about" class="btn">Explore</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h1>About Us</h1>
+    <p>
+      This is a sample parallax scrolling website.  
+      Parallax effect makes websites more interactive and visually appealing.
+    </p>
+  </div>
+
+  <!-- Second Parallax Section -->
+  <div class="parallax2"></div>
+
+  <!-- Contact Section -->
+  <div class="section">
+    <h1>Contact Us</h1>
+    <p>Email: example@email.com</p>
+    <a href="#" class="btn">Get in Touch</a>
+  </div>
+
+</body>
+</html>
