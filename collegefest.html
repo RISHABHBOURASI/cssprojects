@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Fest 2025</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    /* Banner */
+    .banner {
+      background: url('https://images.unsplash.com/photo-1521334884684-d80222895322') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .banner h2 {
+      font-size: 40px;
+      background: rgba(0,0,0,0.6);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    /* Events Section */
+    .events {
+      padding: 40px 20px;
+      background: #f4f4f4;
+    }
+
+    .events h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .event-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>College Fest 2025</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Events</a>
+      <a href="#">Schedule</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Welcome to the Annual College Fest 🎉</h2>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events">
+    <h2>Our Events</h2>
+    <div class="event-cards">
+      <div class="card">
+        <h3>Music Night</h3>
+        <p>Enjoy live performances by amazing bands and singers.</p>
+      </div>
+      <div class="card">
+        <h3>Technical Quiz</h3>
+        <p>Showcase your technical skills and win exciting prizes.</p>
+      </div>
+      <div class="card">
+        <h3>Dance Competition</h3>
+        <p>Groove to the beats and impress the crowd with your moves.</p>
+      </div>
+      <div class="card">
+        <h3>Food Carnival</h3>
+        <p>Delicious food stalls with a variety of cuisines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 College Fest | Designed with ❤️ by Students</p>
+  </footer>
+
+</body>
+</html>
