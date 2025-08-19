@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #0072ff;
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2.section-title {
+      font-size: 1.8rem;
+      color: #0072ff;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #0072ff;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    /* About */
+    #about p {
+      max-width: 700px;
+      margin-top: 1rem;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #0072ff;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Experience & Education */
+    .timeline {
+      border-left: 3px solid #0072ff;
+      padding-left: 20px;
+    }
+
+    .timeline-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-item h3 {
+      color: #333;
+      font-size: 1.2rem;
+    }
+
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: #0072ff;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      background: #0072ff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #005ac2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background: #222;
+      color: white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>John Doe</h1>
+      <p>Full Stack Developer | Web Designer</p>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a passionate web developer with expertise in front-end and back-end technologies. 
+        I love building responsive, user-friendly, and scalable applications. 
+        My goal is to deliver high-quality solutions that solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">Python</span>
+        <span class="skill">Git & GitHub</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Web Developer - ABC Tech</h3>
+          <span>2022 - Present</span>
+          <p>Developed and maintained modern web applications, optimized performance, and collaborated with cross-functional teams.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Frontend Intern - XYZ Solutions</h3>
+          <span>2021 - 2022</span>
+          <p>Worked on UI/UX design, responsive layouts, and JavaScript-based features.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Bachelor of Computer Science</h3>
+          <span>2018 - 2022</span>
+          <p>University of Technology</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Created a personal portfolio website with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>E-commerce App</h3>
+          <p>Developed a full-stack e-commerce app with React, Node.js, and MongoDB.</p>
+        </div>
+        <div class="project-card">
+          <h3>Chat Application</h3>
+          <p>Built a real-time chat app using Socket.IO and Node.js.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact">
+        <a href="mailto:johndoe@example.com">Email Me</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 John Doe | All Rights Reserved</p>
+    </footer>
+  </div>
+</body>
+</html>
